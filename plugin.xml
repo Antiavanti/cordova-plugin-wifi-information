@@ -9,7 +9,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 	<description>Cordova Wifi Information Plugin</description>
     <keywords>cordova,wifi,information</keywords>
 
-    <js-module src="www/analyzer.js" name="analyzer"></js-module>
+    <js-module src="www/analyzer.js" name="analyzer">
+		<clobbers target="navigator.wifi" />
+	</js-module>
 
     <!-- android -->
     <platform name="android">

@@ -11,7 +11,7 @@ import android.net.wifi.ScanResult;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 
-public class WifiInfoPlugin extends CordovaPlugin { 
+public class WifiAnalyzer extends CordovaPlugin { 
 
 	@Override 
 	public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {

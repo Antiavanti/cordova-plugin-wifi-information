@@ -1,12 +1,10 @@
-cordova.define('cordova/plugin/wifi', function(require, exports, module) {
-    var exec = require('cordova/exec');
+var exec = require('cordova/exec');
 
-    var WifiAnalyzer = function() {};
+var WifiAnalyzer = function() {};
 
-    WifiAnalyzer.prototype.getNetworks = function(successCallback, failureCallback) {
-        exec(successCallback, failureCallback, 'WifiInformation', null, []);
-    }
+WifiAnalyzer.prototype.getNetworks = function(successCallback, failureCallback) {
+	exec(successCallback, failureCallback, 'WifiInformation', null, []);
+}
 
-    var wifiAnalyzer = new WifiAnalyzer();
-    module.exports = wifiAnalyzer;
-});
+var wifiAnalyzer = new WifiAnalyzer();
+module.exports = wifiAnalyzer;
