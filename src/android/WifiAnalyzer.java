@@ -50,7 +50,7 @@ public class WifiAnalyzer extends CordovaPlugin {
 
 	private JSONObject getActiveNetwork(CallbackContext callbackContext) {
 		WifiInfo wifiInfo = this.wifiManager.getConnectionInfo();
-		if (wifiInfo.getSSID() == null) {
+		if (wifiInfo.getSSID() == null || wifiInfo.getIpAddress() == 0) {
 			return null;
 		}
 		try {
